@@ -8,5 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: sudo apt install -y --no-install-recommends iverilog
-      - run: pip3 install cocotb cocotbext-axi
+      - run: pip3 install cocotb cocotbext-axi cocotb-coverage
       - run: make 

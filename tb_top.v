@@ -35,10 +35,10 @@ module tb_top(
 	input  wire        rvalid,
 	output wire        rready,
 	// ID Signals
- //output wire [1:0] awid,
- //output wire [1:0] arid,
- //input wire [1:0] bid,
- //input wire [1:0] rid,
+output wire [1:0] awid,
+output wire [1:0] arid,
+input wire [1:0] bid,
+input wire [1:0] rid,
 
 	input wire clk,
 	input wire rst_n

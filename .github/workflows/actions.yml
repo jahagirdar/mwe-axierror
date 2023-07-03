@@ -1,0 +1,12 @@
+name: MEWCocotbError
+run-name: ${{ github.actor }} Regression
+on: [push]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v3
+      - run: sudo apt install -y --no-install-recommends iverilog
+      - run: pip3 install cocotb cocotbext-axi
+      - run: make 
